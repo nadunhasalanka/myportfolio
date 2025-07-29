@@ -115,7 +115,7 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder={portfolioData.contact.form.placeholders.name}
-                  className="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-zinc-500 focus:outline-none focus:border-accent-blue transition-colors"
+                  className="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-2 text-white placeholder-zinc-500 focus:outline-none focus:border-accent-blue transition-colors"
                   required
                 />
               </div>
@@ -131,7 +131,7 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder={portfolioData.contact.form.placeholders.email}
-                  className="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-zinc-500 focus:outline-none focus:border-accent-blue transition-colors"
+                  className="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-2 text-white placeholder-zinc-500 focus:outline-none focus:border-accent-blue transition-colors"
                   required
                 />
               </div>
@@ -146,8 +146,8 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   placeholder={portfolioData.contact.form.placeholders.message}
-                  rows={6}
-                  className="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-zinc-500 focus:outline-none focus:border-accent-blue transition-colors resize-none"
+                  rows={4}
+                  className="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-2 text-white placeholder-zinc-500 focus:outline-none focus:border-accent-blue transition-colors resize-none"
                   required
                 ></textarea>
               </div>
@@ -155,7 +155,8 @@ const ContactSection = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-white text-black font-semibold py-4 px-6 rounded-lg hover:bg-zinc-200 transition-colors duration-300"
+                className="w-full bg-white text-black font-semibold py-2 px-6 rounded-lg hover:bg-zinc-200 transition-colors duration-300"
+                // className="w-[500px] bg-white text-black font-semibold py-2 px-6 rounded-lg hover:bg-zinc-200 transition-colors duration-300"
               >
                 {portfolioData.contact.form.submitText}
               </button>

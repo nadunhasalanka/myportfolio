@@ -295,7 +295,7 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
                 {project.techStack.map((tech, techIndex) => (
                   <motion.span 
                     key={techIndex}
-                    className="bg-zinc-800/80 border border-zinc-600/50 text-zinc-300 px-3 py-1 rounded-full text-xs font-medium hover:border-emerald-500/50 hover:text-emerald-300 transition-all duration-300"
+                    className="bg-zinc-800/80 border border-zinc-600/50 text-zinc-300 px-3 py-1 rounded-[10px] text-xs font-medium hover:border-emerald-500/50 hover:text-emerald-300 transition-all duration-300"
                     initial={{ opacity: 0, scale: 0, rotate: -180 }}
                     animate={{ opacity: 1, scale: 1, rotate: 0 }}
                     transition={{ 

@@ -93,10 +93,10 @@ export const portfolioData = {
       },
       {
         id: 4,
-        title: "AI Content Studio",
-        category: "AI",
+        title: "AirDrop Journal",
+        category: "WEB",
         description: "An intelligent content creation platform powered by AI for generating blog posts, social media content, and marketing materials.",
-        techStack: ["React", "Python", "OpenAI", "FastAPI"],
+        techStack: ["React", "Node", "Docker", "MongoDB"],
         features: [
           "AI-Powered Content Generation – Create high-quality blog posts, social media content, and marketing copy using advanced AI models.",
           "Multi-Platform Publishing – Direct integration with social media platforms and content management systems.",
@@ -107,6 +107,25 @@ export const portfolioData = {
         hasVideo: false,
         liveUrl: "https://ai-content-studio.vercel.app",
         githubUrl: "https://github.com/nadunhasalanka/AI-Content-Studio"
+      },
+      {
+        id: 5,
+        title: "WE4U",
+        category: "Web",
+        description: "This Platform connects Caregivers, Careseekers & Consultants into a one single place. Where they can commuicate and engage.",
+        techStack: ["PHP", "HTML", "MYSQL"],
+        features: [
+          "Careseekers can Search for Caregivers && Consultants throught this platform.",
+          "Two types of sheduling logic for Caregivers and Consultants that handled differently.",
+          "Multiple roles that routes differently, and makes different functionalities.",
+          "All these without engaging with a single framework or a libry."
+        ],
+        status: "Completed",
+        mockupType: "shiksha",
+        hasVideo: false,
+        videoUrl: "/demo-video.mp4", // You can replace this with actual video URL
+        liveUrl: "https://shiksha-soladu.vercel.app",
+        githubUrl: "https://github.com/nadunhasalanka/ShikshaSoladu"
       }
     ]
   },
@@ -181,7 +200,7 @@ export const portfolioData = {
   footer: {
     brand: "NCODE",
     copyright: "© 2025 Nadun Hasalanka. All rights reserved.",
-    tagline: "Crafted with passion and precision"
+    // tagline: "Crafted with passion and precision"
   },
   
   socialLinks: [

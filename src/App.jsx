@@ -12,11 +12,11 @@ function App() {
       <FloatingIcons />
       <Header />
       
-      <main className="min-h-screen" style={{paddingTop: '90px'}}>
+      <main className="min-h-screen" style={{paddingTop: '100px'}}>
         {/* Hero Section / Profile */}
         <div id="profile" className="min-h-screen flex items-center justify-center">
           {/* <div className="max-w-6xl mx-auto px-8"> */}
-          <div className="max-w-5xl mx-auto px-8">
+          <div className="max-w-5xl mx-auto px-8 py-20">
 
             <ProfileCard />
           </div>

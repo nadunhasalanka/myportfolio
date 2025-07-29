@@ -52,7 +52,7 @@ const TypewriterAnimation = ({ text, speed = 150, deleteSpeed = 75, pauseTime = 
     <span className="relative">
       {displayText}
       <span 
-        className={`inline-block w-0.5 h-9 bg-accent-blue ml-1 transition-opacity duration-100 ${
+        className={`inline-block w-1 h-9 bg-accent-blue ml-1 transition-opacity duration-100 ${
           showCursor ? 'opacity-100' : 'opacity-0'
         }`}
       />
