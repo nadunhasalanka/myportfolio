@@ -77,7 +77,7 @@ const SkillsSection = () => {
         </motion.div>
         
         <motion.p 
-          className="text-zinc-400 text-sm leading-relaxed mb-8"
+          className="text-zinc-300 text-sm leading-relaxed mb-8"
           variants={titleVariants}
         >
           {portfolioData.skills.toolsDescription}

@@ -288,7 +288,7 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
             </motion.h3>
             
             <motion.p 
-              className="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow"
+              className="text-zinc-300 text-sm leading-relaxed mb-6 flex-grow"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 + index * 0.1, duration: 0.5 }}
@@ -312,7 +312,7 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
                 {project.techStack.map((tech, techIndex) => (
                   <motion.span 
                     key={techIndex}
-                    className="bg-zinc-800/80 border border-zinc-600/50 text-zinc-300 px-3 py-1 rounded-[10px] text-xs font-medium hover:border-emerald-500/50 hover:text-emerald-300 transition-all duration-300"
+                    className="bg-zinc-700 text-zinc-200 px-3 py-1 rounded-[10px] text-xs font-medium hover:bg-zinc-600 hover:text-white transition-all duration-300"
                     initial={{ opacity: 0, scale: 0, rotate: -180 }}
                     animate={{ opacity: 1, scale: 1, rotate: 0 }}
                     transition={{ 
@@ -350,7 +350,7 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
                 {project.features.map((feature, featureIndex) => (
                   <motion.li 
                     key={featureIndex}
-                    className="text-zinc-400 text-sm relative pl-4"
+                    className="text-zinc-300 text-sm relative pl-4"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ 

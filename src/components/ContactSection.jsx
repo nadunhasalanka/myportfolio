@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolioData';
 
 const ContactSection = () => {
@@ -22,22 +23,81 @@ const ContactSection = () => {
     console.log('Form submitted:', formData);
   };
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.1
+      }
+    }
+  };
+
+  const titleVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { 
+      opacity: 1, 
+      x: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.25, 0.46, 0.45, 0.94]
+      }
+    }
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: [0.25, 0.46, 0.45, 0.94]
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5
+      }
+    }
+  };
+
   return (
     // <section id="contact" className="py-20 px-8 max-w-6xl mx-auto">
-    <section id="contact" className="py-20 px-8 max-w-5xl mx-auto">
+    <motion.section 
+      id="contact" 
+      className="py-20 px-8 max-w-5xl mx-auto"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+    >
       <div className="mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-white relative mb-8">
+        <motion.h2 
+          className="text-3xl md:text-4xl font-bold text-white relative mb-8"
+          variants={titleVariants}
+        >
           {/* <span className="hidden lg:block absolute -left-4 top-1/2 transform -translate-y-1/2 w-3 h-1 bg-white"></span> */}
             <span className="">{"</ "}</span>
             {portfolioData.contact.title}
             <span className="">{" >"}</span>
-        </h2>
+        </motion.h2>
       </div>
 
-      <div className="bg-dark-card border border-dark-border rounded-xl p-8 backdrop-blur-[10px]">
+      <motion.div 
+        className="bg-dark-card border border-dark-border rounded-xl p-8 backdrop-blur-[10px]"
+        variants={cardVariants}
+      >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Contact Information */}
-          <div>
+          <motion.div variants={itemVariants}>
             <div className="flex items-center gap-3 mb-6">
                 <div className="w-1 h-6 bg-white"></div>
                 <h3 className="text-lg font-semibold text-white">
@@ -92,10 +152,10 @@ const ContactSection = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Contact Form */}
-          <div>
+          <motion.div variants={itemVariants}>
             <div className="flex items-center gap-3 mb-6">
                 <div className="w-1 h-6 bg-white"></div>
                 <h3 className="text-lg font-semibold text-white">
@@ -161,10 +221,10 @@ const ContactSection = () => {
                 {portfolioData.contact.form.submitText}
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

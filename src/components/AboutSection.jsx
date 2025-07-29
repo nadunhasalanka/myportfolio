@@ -8,7 +8,7 @@ const AboutSection = () => {
       </h2>
       
       {portfolioData.about.paragraphs.map((paragraph, index) => (
-        <p key={index} className="text-zinc-400 text-sm leading-relaxed mb-4">
+        <p key={index} className="text-zinc-300 text-sm leading-relaxed mb-4">
           {paragraph}
         </p>
       ))}

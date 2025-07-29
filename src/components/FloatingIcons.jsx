@@ -7,9 +7,12 @@ import {
   SiSpring,
   SiKubernetes,
   SiMongodb,
-  SiPostgresql
+  SiPostgresql,
+  SiJavascript,
+  SiTailwindcss,
+  SiGithub
 } from 'react-icons/si';
-import { FaCloud, FaJava } from 'react-icons/fa';
+import { FaCloud, FaJava, FaNodeJs } from 'react-icons/fa';
 
 // Custom Java SVG Icon
 const JavaIcon = ({ size = 48, color = '#ED8B00' }) => (
@@ -87,6 +90,30 @@ const FloatingIcons = () => {
       color: '#6DB33F',
       size: 38,
       id: 'spring'
+    },
+    { 
+      Icon: SiJavascript, 
+      color: '#F7DF1E',
+      size: 36,
+      id: 'javascript'
+    },
+    { 
+      Icon: FaNodeJs, 
+      color: '#68A063',
+      size: 42,
+      id: 'nodejs'
+    },
+    { 
+      Icon: SiTailwindcss, 
+      color: '#06B6D4',
+      size: 40,
+      id: 'tailwind'
+    },
+    { 
+      Icon: SiGithub, 
+      color: '#181717',
+      size: 38,
+      id: 'github'
     }
   ];
 

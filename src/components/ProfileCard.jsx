@@ -10,7 +10,11 @@ const ProfileCard = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="bg-gradient-to-br from-zinc-900/60 via-zinc-800/40 to-zinc-900/60 border border-zinc-700/30 rounded-2xl p-8 backdrop-blur-sm shadow-2xl"
+      className="bg-gradient-to-br from-zinc-900/20 via-zinc-800/30 to-zinc-900/80 border border-zinc-700/30 rounded-2xl p-8 backdrop-blur-sm shadow-2xl"
+      // className="bg-zinc-900/85 border border-zinc-700/40 rounded-2xl p-8 backdrop-blur-sm shadow-2xl"
+      // className="bg-gradient-to-br from-zinc-900/60 via-zinc-800/40 to-zinc-900/60 border border-zinc-700/30 rounded-2xl p-8 backdrop-blur-sm shadow-2xl"
+
+
     >
       <motion.div
         initial={{ opacity: 0, y: 30 }}
