@@ -16,7 +16,7 @@ function App() {
         {/* Hero Section / Profile */}
         <div id="profile" className="min-h-screen flex items-center justify-center">
           {/* <div className="max-w-6xl mx-auto px-8"> */}
-          <div className="max-w-5xl mx-auto px-8 py-20">
+          <div className="max-w-5xl mx-auto px-8 py-10">
 
             <ProfileCard />
           </div>

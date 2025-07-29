@@ -85,7 +85,7 @@ const ProjectsSection = () => {
         )}
       </AnimatePresence>
 
-      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-12 gap-6 relative z-10">
+      <div className="flex flex-col items-start mb-12 gap-6 relative z-10">
         <motion.h2 
           className="text-3xl md:text-4xl font-bold text-white relative"
           variants={titleVariants}
@@ -97,7 +97,7 @@ const ProjectsSection = () => {
         </motion.h2>
         
         <motion.div 
-          className="flex gap-2"
+          className="flex gap-2 flex-wrap"
           variants={filterVariants}
         >
           {portfolioData.projects.filters.map((filter) => (

@@ -157,9 +157,9 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-50px" }}
-      onMouseMove={handleMouseMove}
-      onHoverStart={handleHoverStart}
-      onHoverEnd={handleHoverEnd}
+      onMouseMove={window.innerWidth >= 768 ? handleMouseMove : undefined}
+      onHoverStart={window.innerWidth >= 768 ? handleHoverStart : undefined}
+      onHoverEnd={window.innerWidth >= 768 ? handleHoverEnd : undefined}
       className="flex flex-col h-full cursor-pointer"
       style={{
         perspective: "1000px",
