@@ -2,13 +2,13 @@ import { portfolioData } from '../data/portfolioData';
 
 const InfoGrid = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 ">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
       {portfolioData.infoItems.map((item, index) => (
-        <div key={index} className="flex items-center gap-3 ">
-          <div className="w-5 h-5 flex items-center justify-center text-base">
+        <div key={index} className="flex items-center gap-3">
+          <div className="w-8 h-8 rounded-lg bg-zinc-800 shadow-md flex items-center justify-center text-sm">
             {item.icon}
           </div>
-          <span className="text-text-secondary font-medium">
+          <span className="text-zinc-300 text-sm font-medium">
             {item.text}
           </span>
         </div>

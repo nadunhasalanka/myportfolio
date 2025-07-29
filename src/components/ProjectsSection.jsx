@@ -87,7 +87,7 @@ const ProjectsSection = () => {
 
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-12 gap-6 relative z-10">
         <motion.h2 
-          className="text-4xl font-bold text-white relative"
+          className="text-3xl md:text-4xl font-bold text-white relative"
           variants={titleVariants}
         >
           {/* <span className="hidden lg:block absolute left-4 top-1/2 transform -translate-y-1/2 w-3 h-1 bg-white"></span> */}
@@ -120,7 +120,7 @@ const ProjectsSection = () => {
       </div>
 
       <motion.div 
-        className="grid grid-cols-1 lg:grid-cols-2 gap-8 relative z-10"
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10"
         variants={containerVariants}
       >
         {filteredProjects.map((project, index) => (

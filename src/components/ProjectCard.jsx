@@ -1,5 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { useState, useRef } from 'react';
+import { FaGithub, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa';
 import ProjectMockup from './ProjectMockup';
 
 const ProjectCard = ({ project, index, onHoverChange }) => {
@@ -107,7 +108,7 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
 
   const imageVariants = {
     hover: {
-      scale: 1.1,
+      // Removed scale animation to keep images/videos still
       transition: {
         duration: 0.6,
         ease: [0.165, 0.84, 0.44, 1]
@@ -177,7 +178,7 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
           rotateY,
           transformStyle: "preserve-3d"
         }}
-        className="bg-dark-card border border-dark-border rounded-xl overflow-hidden backdrop-blur-[10px] transition-all duration-500 hover:border-emerald-500/50 relative z-10 flex flex-col h-full"
+        className="bg-zinc-900/50 rounded-xl overflow-hidden backdrop-blur-[10px] transition-all duration-500 hover:shadow-lg hover:shadow-yellow-200/20 relative z-10 flex flex-col h-full"
       >
         <motion.div
           variants={glowVariants}
@@ -219,9 +220,9 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
               transition={{ duration: 0.4, ease: [0.165, 0.84, 0.44, 1] }}
             />
 
-            {/* Magnetic buttons */}
+            {/* Action buttons */}
             <motion.div
-              className="absolute bottom-6 left-6 right-6 flex gap-3"
+              className="absolute bottom-6 left-6 right-6 flex gap-2"
               variants={buttonContainerVariants}
               initial="hidden"
               animate={isHovered ? "visible" : "hidden"}
@@ -233,10 +234,10 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
-                className="flex items-center gap-2 bg-white text-black px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 cursor-pointer shadow-2xl backdrop-blur-sm border border-white/20"
+                className="flex items-center gap-2 bg-white text-black px-3 lg:px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 cursor-pointer shadow-xl"
               >
-                <span>👁️</span>
-                Live Demo
+                <FaExternalLinkAlt size={14} />
+                <span className="hidden lg:inline">Live Demo</span>
               </motion.a>
               
               <motion.a
@@ -246,17 +247,30 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
-                className="flex items-center gap-2 bg-zinc-900/90 text-white px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 border border-zinc-700 cursor-pointer shadow-2xl backdrop-blur-sm"
+                className="flex items-center gap-2 bg-zinc-800/90 text-white px-3 lg:px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 cursor-pointer shadow-xl hover:bg-zinc-700/90"
               >
-                <span>👁️</span>
-                View Code
+                <FaGithub size={16} />
+                <span className="hidden lg:inline">GitHub</span>
+              </motion.a>
+
+              <motion.a
+                href={project.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
+                className="flex items-center gap-2 bg-blue-600/90 text-white px-3 lg:px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 cursor-pointer shadow-xl hover:bg-blue-500/90"
+              >
+                <FaLinkedin size={16} />
+                <span className="hidden lg:inline">LinkedIn</span>
               </motion.a>
             </motion.div>
           </div>
           
           <div className="p-6 transition-all duration-300 flex-grow flex flex-col bg-gradient-to-b from-dark-card to-dark-card/90">
             <motion.div 
-              className="text-emerald-400 text-sm font-semibold mb-2 uppercase tracking-wider"
+              className="text-emerald-400 text-xs font-semibold mb-2 uppercase tracking-wider"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
@@ -265,7 +279,7 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
             </motion.div>
             
             <motion.h3 
-              className="text-white text-2xl font-bold mb-3 hover:text-emerald-400 transition-colors duration-300"
+              className="text-white text-xl font-semibold mb-3 hover:text-emerald-400 transition-colors duration-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 + index * 0.1, duration: 0.5 }}
@@ -274,7 +288,7 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
             </motion.h3>
             
             <motion.p 
-              className="text-zinc-400 leading-relaxed mb-6 flex-grow"
+              className="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 + index * 0.1, duration: 0.5 }}
@@ -288,7 +302,10 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 + index * 0.1, duration: 0.5 }}
             >
-              <div className="text-zinc-500 text-sm font-semibold mb-3 uppercase tracking-wider">
+              {/* Separator before Tech Stack */}
+              <div className="w-full h-px bg-gradient-to-r from-zinc-700 via-zinc-600 to-transparent mb-4"></div>
+              
+              <div className="text-zinc-500 text-xs font-semibold mb-3 uppercase tracking-wider">
                 Tech Stack
               </div>
               <div className="flex flex-wrap gap-2">
@@ -315,6 +332,9 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
                   </motion.span>
                 ))}
               </div>
+              
+              {/* Separator after Tech Stack */}
+              <div className="w-full h-px bg-gradient-to-r from-zinc-700 via-zinc-600 to-transparent mt-4"></div>
             </motion.div>
             
             <motion.div 
@@ -323,7 +343,7 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 + index * 0.1, duration: 0.5 }}
             >
-              <div className="text-zinc-500 text-sm font-semibold mb-3 uppercase tracking-wider">
+              <div className="text-zinc-500 text-xs font-semibold mb-3 uppercase tracking-wider">
                 Key Features
               </div>
               <ul className="list-none space-y-2">

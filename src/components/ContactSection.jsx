@@ -26,7 +26,7 @@ const ContactSection = () => {
     // <section id="contact" className="py-20 px-8 max-w-6xl mx-auto">
     <section id="contact" className="py-20 px-8 max-w-5xl mx-auto">
       <div className="mb-12">
-        <h2 className="text-4xl font-bold text-white relative mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-white relative mb-8">
           {/* <span className="hidden lg:block absolute -left-4 top-1/2 transform -translate-y-1/2 w-3 h-1 bg-white"></span> */}
             <span className="">{"</ "}</span>
             {portfolioData.contact.title}
@@ -40,7 +40,7 @@ const ContactSection = () => {
           <div>
             <div className="flex items-center gap-3 mb-6">
                 <div className="w-1 h-6 bg-white"></div>
-                <h3 className="text-2xl font-bold text-white">
+                <h3 className="text-lg font-semibold text-white">
                     Contact Information
                 </h3>
             </div>
@@ -54,8 +54,8 @@ const ContactSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-text-secondary text-sm mb-1">Email</div>
-                  <div className="text-white font-medium">
+                  <div className="text-zinc-400 text-sm mb-1">Email</div>
+                  <div className="text-white text-sm font-medium">
                     {portfolioData.contact.contactInfo.email}
                   </div>
                 </div>
@@ -69,8 +69,8 @@ const ContactSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-text-secondary text-sm mb-1">Phone</div>
-                  <div className="text-white font-medium">
+                  <div className="text-zinc-400 text-sm mb-1">Phone</div>
+                  <div className="text-white text-sm font-medium">
                     {portfolioData.contact.contactInfo.phone}
                   </div>
                 </div>
@@ -85,8 +85,8 @@ const ContactSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-text-secondary text-sm mb-1">Location</div>
-                  <div className="text-white font-medium">
+                  <div className="text-zinc-400 text-sm mb-1">Location</div>
+                  <div className="text-white text-sm font-medium">
                     {portfolioData.contact.contactInfo.location}
                   </div>
                 </div>
@@ -98,7 +98,7 @@ const ContactSection = () => {
           <div>
             <div className="flex items-center gap-3 mb-6">
                 <div className="w-1 h-6 bg-white"></div>
-                <h3 className="text-2xl font-bold text-white">
+                <h3 className="text-lg font-semibold text-white">
                     {portfolioData.contact.form.title}
                 </h3>
             </div>
@@ -106,7 +106,7 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Field */}
               <div>
-                <label className="block text-text-secondary text-sm mb-3">
+                <label className="block text-zinc-400 text-sm mb-3">
                   {portfolioData.contact.form.fields.name}
                 </label>
                 <input
@@ -122,7 +122,7 @@ const ContactSection = () => {
 
               {/* Email Field */}
               <div>
-                <label className="block text-text-secondary text-sm mb-3">
+                <label className="block text-zinc-400 text-sm mb-3">
                   {portfolioData.contact.form.fields.email}
                 </label>
                 <input
@@ -138,7 +138,7 @@ const ContactSection = () => {
 
               {/* Message Field */}
               <div>
-                <label className="block text-text-secondary text-sm mb-3">
+                <label className="block text-zinc-400 text-sm mb-3">
                   {portfolioData.contact.form.fields.message}
                 </label>
                 <textarea

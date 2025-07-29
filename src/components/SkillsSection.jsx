@@ -1,12 +1,19 @@
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 import { portfolioData } from '../data/portfolioData';
 import TechItem from './TechItem';
+
+const SkillsSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
+        staggerChildren: 0.1,
+        delayChildren: 0.3
       }
     }
   };
@@ -23,39 +30,69 @@ import TechItem from './TechItem';
     }
   };
 
-const SkillsSection = () => {
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: [0.25, 0.46, 0.45, 0.94]
+      }
+    }
+  };
+
   return (
-    
-    // <section id="skills" className="py-20 px-8 max-w-6xl mx-auto">
-    <section id="skills" className="py-20 px-8 max-w-5xl mx-auto">
+    <motion.section 
+      ref={ref}
+      id="skills" 
+      className="py-20 px-8 max-w-5xl mx-auto"
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={sectionVariants}
+    >
       <div className="mb-12">
-        <h2 className="text-4xl font-bold text-white relative mb-8">
-          {/* <span className="hidden lg:block absolute -left-4 top-1/2 transform -translate-y-1/2 w-3 h-1 bg-white"></span> */}
-            <span className="">{"</ "}</span>
-            {portfolioData.skills.title}
-            <span className="">{" >"}</span>
-        </h2>
+        <motion.h2 
+          className="text-3xl md:text-4xl font-bold text-white relative mb-8"
+          variants={titleVariants}
+        >
+          <span className="">{"</ "}</span>
+          {portfolioData.skills.title}
+          <span className="">{" >"}</span>
+        </motion.h2>
       </div>
 
-      <div className="bg-dark-card border border-dark-border rounded-xl p-8 backdrop-blur-[10px]">
-        <div className="flex items-center gap-3 mb-6">
+      <motion.div 
+        className="bg-zinc-800/30 border border-zinc-700/30 rounded-xl p-8 backdrop-blur-sm"
+        variants={sectionVariants}
+      >
+        <motion.div 
+          className="flex items-center gap-3 mb-6"
+          variants={titleVariants}
+        >
           <div className="w-1 h-6 bg-white"></div>
-          <h3 className="text-2xl font-bold text-white">
+          <h3 className="text-lg font-semibold text-white">
             {portfolioData.skills.toolsTitle}
           </h3>
-        </div>
+        </motion.div>
         
-        <p className="text-text-secondary leading-relaxed mb-8">
+        <motion.p 
+          className="text-zinc-400 text-sm leading-relaxed mb-8"
+          variants={titleVariants}
+        >
           {portfolioData.skills.toolsDescription}
-        </p>
+        </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+          variants={containerVariants}
+        >
           {portfolioData.skills.technologies.map((tech, index) => (
-            <TechItem key={index} tech={tech} />
+            <TechItem key={index} tech={tech} index={index} />
           ))}
-        </div>
-      </div>
-    </section>
+        </motion.div>
+      </motion.div>
+    </motion.section>
   );
 };
 

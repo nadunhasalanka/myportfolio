@@ -3,23 +3,34 @@ import TypewriterAnimation from './TypewriterAnimation';
 
 const ProfileHeader = () => {
   return (
-    <div className="flex flex-col md:flex-row items-start gap-8 mb-12">
-      <div className="w-30 h-30 rounded-xl bg-gradient-to-br from-zinc-800 to-zinc-600 flex items-center justify-center text-5xl font-bold text-text-secondary flex-shrink-0 border border-zinc-600 self-center md:self-start" style={{width: '120px', height: '120px'}}>
-        {portfolioData.personal.initials}
+    <div className="flex flex-col md:flex-row items-start gap-6 mb-10">
+      {/* Profile Image */}
+      <div className="w-28 h-28 rounded-2xl bg-gradient-to-br from-zinc-700 to-zinc-800 flex items-center justify-center overflow-hidden border border-zinc-600/50 flex-shrink-0 shadow-lg">
+        <img 
+          src="/api/placeholder/112/112" 
+          alt="Profile" 
+          className="w-full h-full object-cover"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextSibling.style.display = 'flex';
+          }}
+        />
+        <div className="w-full h-full bg-gradient-to-br from-zinc-700 to-zinc-800 flex items-center justify-center text-3xl font-bold text-zinc-300" style={{display: 'none'}}>
+          {portfolioData.personal.initials}
+        </div>
       </div>
       
-      <div className="flex-1 text-center md:text-left">
-        <div className="flex items-center gap-2 mb-4 justify-center md:justify-start">
-          <div className="relative">
-            <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-            <div className="absolute inset-0 w-2 h-2 bg-red-500 rounded-full animate-ping opacity-75"></div>
-          </div>
-          <span className="text-red-400 text-sm font-semibold uppercase tracking-wider animate-pulse">
+      <div className="flex-1">
+        {/* Status */}
+        <div className="flex items-center gap-2 mb-3">
+          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+          <span className="text-green-400 text-xs font-medium uppercase tracking-wider">
             {portfolioData.personal.status}
           </span>
         </div>
         
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 relative">
+        {/* Name */}
+        <h1 className="text-3xl md:text-4xl font-bold text-white mb-1">
           <TypewriterAnimation 
             text={portfolioData.personal.name}
             speed={120}

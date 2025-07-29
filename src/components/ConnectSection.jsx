@@ -4,11 +4,11 @@ import SocialLink from './SocialLink';
 const ConnectSection = () => {
   return (
     <div>
-      <h2 className="text-white text-xl font-semibold mb-6">
+      <h2 className="text-white text-lg font-semibold mb-4 uppercase tracking-wide">
         CONNECT
       </h2>
       
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-3">
         {portfolioData.socialLinks.map((link, index) => (
           <SocialLink
             key={index}

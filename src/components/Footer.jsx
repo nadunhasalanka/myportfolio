@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-black border-t border-zinc-800 py-8 px-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="text-white font-bold text-xl">
+        <div className="text-white font-bold text-lg">
           {portfolioData.footer.brand}
         </div>
         
