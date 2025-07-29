@@ -38,7 +38,7 @@ export const portfolioData = {
   
   projects: {
     title: "FEATURED PROJECTS",
-    filters: ["All", "Web", "Design", "AI"],
+    filters: ["All", "Web", "DevOps"],
     items: [
       {
         id: 1,
@@ -56,7 +56,8 @@ export const portfolioData = {
         hasVideo: true,
         videoUrl: "/demo-video.mp4", // You can replace this with actual video URL
         liveUrl: "https://shiksha-soladu.vercel.app",
-        githubUrl: "https://github.com/nadunhasalanka/ShikshaSoladu"
+        githubUrl: "https://github.com/nadunhasalanka/ShikshaSoladu",
+        linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
       },
       {
         id: 2,
@@ -72,7 +73,8 @@ export const portfolioData = {
         mockupType: "enigma",
         hasVideo: false,
         liveUrl: "https://enigma-design.vercel.app",
-        githubUrl: "https://github.com/nadunhasalanka/Enigma"
+        githubUrl: "https://github.com/nadunhasalanka/Enigma",
+        linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
       },
       {
         id: 3,
@@ -89,12 +91,13 @@ export const portfolioData = {
         mockupType: "shiksha",
         hasVideo: false,
         liveUrl: "https://taskflow-pro.vercel.app",
-        githubUrl: "https://github.com/nadunhasalanka/TaskFlow-Pro"
+        githubUrl: "https://github.com/nadunhasalanka/TaskFlow-Pro",
+        linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
       },
       {
         id: 4,
         title: "AirDrop Journal",
-        category: "WEB",
+        category: "DevOps",
         description: "An intelligent content creation platform powered by AI for generating blog posts, social media content, and marketing materials.",
         techStack: ["React", "Node", "Docker", "MongoDB"],
         features: [
@@ -106,7 +109,8 @@ export const portfolioData = {
         mockupType: "enigma",
         hasVideo: false,
         liveUrl: "https://ai-content-studio.vercel.app",
-        githubUrl: "https://github.com/nadunhasalanka/AI-Content-Studio"
+        githubUrl: "https://github.com/nadunhasalanka/AI-Content-Studio",
+        linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
       },
       {
         id: 5,
@@ -125,7 +129,8 @@ export const portfolioData = {
         hasVideo: false,
         videoUrl: "/demo-video.mp4", // You can replace this with actual video URL
         liveUrl: "https://shiksha-soladu.vercel.app",
-        githubUrl: "https://github.com/nadunhasalanka/ShikshaSoladu"
+        githubUrl: "https://github.com/nadunhasalanka/ShikshaSoladu",
+        linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
       }
     ]
   },
@@ -133,43 +138,67 @@ export const portfolioData = {
   skills: {
     title: "SKILLS & EXPERTISE",
     toolsTitle: "Tools & Technologies",
-    toolsDescription: "My toolkit is constantly expanding as I explore new technologies that enhance user experiences and streamline development workflows. These are my daily companions in crafting digital solutions.",
+    toolsDescription: "My comprehensive skill set spans across modern web development, cloud technologies, and programming languages. These tools enable me to build scalable and efficient solutions.",
     technologies: [
       {
-        name: "TypeScript",
-        logo: "TS",
-        logoStyle: "typescript-logo",
-        description: "Commonly employed across all of my projects, it provides optional static typing and modern features, enhancing robust development practices."
+        name: "React.js",
+        description: "Component-based library for building interactive user interfaces with efficient rendering and state management."
       },
       {
-        name: "JavaScript & jQuery",
-        logo: "JS",
-        logoStyle: "javascript-logo",
-        description: "JavaScript, celebrated for its optional static typing and contemporary features, stands as a cornerstone in virtually all of my projects, ensuring robust development practices and fostering innovation."
+        name: "JavaScript",
+        description: "Versatile programming language for both frontend and backend development with modern ES6+ features."
       },
       {
-        name: "React, Zustand",
-        logo: "⚛",
-        logoStyle: "react-logo",
-        description: "A cutting-edge JavaScript library for front-end development, offering a component-based approach for efficient rendering and dynamic user interfaces."
-      },
-      {
-        name: "Next",
-        logo: "N",
-        logoStyle: "nextjs-logo",
-        description: "React simplifies front-end development with server-side rendering, automatic code splitting, and SEO-friendly features, empowering developers to create dynamic and responsive web applications with ease."
-      },
-      {
-        name: "PHP, Twig",
-        logo: "PHP",
-        logoStyle: "php-logo",
-        description: "A versatile scripting language powering dynamic web development with its server-side capabilities, database integration, and extensive library support."
+        name: "PHP",
+        description: "Server-side scripting language for dynamic web applications and robust backend development."
       },
       {
         name: "HTML",
-        logo: "HTML",
-        logoStyle: "html-logo",
-        description: "The cornerstone of modern web development, it furnishes the essential structure and semantics necessary for crafting interactive and accessible websites that cater to diverse user needs and preferences."
+        description: "Semantic markup language providing the structural foundation for modern web applications."
+      },
+      {
+        name: "Docker",
+        description: "Containerization platform for consistent application deployment across different environments."
+      },
+      {
+        name: "AWS",
+        description: "Cloud computing platform providing scalable infrastructure and services for modern applications."
+      },
+      {
+        name: "GitHub",
+        description: "Version control platform for collaborative development and continuous integration workflows."
+      },
+      {
+        name: "Proficiency with AI",
+        description: "Experience with AI tools and machine learning frameworks for intelligent application development."
+      },
+      {
+        name: "C",
+        description: "Low-level programming language for system programming and performance-critical applications."
+      },
+      {
+        name: "OOP",
+        description: "Object-oriented programming principles for maintainable and scalable software architecture."
+      },
+      {
+        name: "Python",
+        description: "High-level programming language for data science, automation, and backend development."
+      },
+      {
+        name: "Kubernetes",
+        description: "Container orchestration platform for deploying and managing scalable applications."
+      },
+      {
+        name: "Jenkins",
+        description: "Automation server for continuous integration and continuous deployment pipelines."
+      },
+      {
+        name: "Java",
+        description: "Enterprise-grade programming language for building robust and platform-independent applications."
+      },
+      {
+        name: "Java Spring Boot",
+        description: "Framework for building production-ready Java applications with minimal configuration."
       }
     ]
   },
