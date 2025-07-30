@@ -5,7 +5,7 @@ const ProfileHeader = () => {
   return (
     <div className="flex flex-col md:flex-row items-center md:items-start gap-6 mb-10">
       {/* Profile Image */}
-      <div className="w-28 h-28 rounded-2xl bg-gradient-to-br from-zinc-700 to-zinc-800 flex items-center justify-center overflow-hidden border border-zinc-600/50 flex-shrink-0 shadow-lg shadow-white/10 shadow-direction-up">
+      <div className="w-32 h-32 md:w-28 md:h-28 rounded-2xl bg-gradient-to-br from-zinc-700 to-zinc-800 flex items-center justify-center overflow-hidden border border-zinc-600/50 flex-shrink-0 shadow-lg shadow-white/10 shadow-direction-up">
         <img 
           src="/api/placeholder/112/112" 
           alt="Profile" 
