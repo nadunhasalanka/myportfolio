@@ -216,7 +216,7 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
             <motion.div
               className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
               initial={{ opacity: 0 }}
-              animate={{ opacity: isHovered ? 1 : 0 }}
+              animate={{ opacity: isHovered || window.innerWidth < 768 ? 1 : 0 }}
               transition={{ duration: 0.4, ease: [0.165, 0.84, 0.44, 1] }}
             />
 
@@ -225,7 +225,7 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
               className="absolute bottom-6 left-6 right-6 flex gap-2"
               variants={buttonContainerVariants}
               initial="hidden"
-              animate={isHovered ? "visible" : "hidden"}
+              animate={isHovered || window.innerWidth < 768 ? "visible" : "hidden"}
             >
               <motion.a
                 href={project.liveUrl}
