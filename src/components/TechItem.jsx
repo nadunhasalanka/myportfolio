@@ -78,9 +78,9 @@ const TechItem = ({ tech, index }) => {
       whileTap={{ scale: 0.98 }}
       className="bg-zinc-900/80 rounded-lg p-4 transition-all duration-300 hover:bg-zinc-800/90 cursor-pointer group"
     >
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 md:gap-4">
         <motion.div
-          className="w-12 h-12 bg-zinc-800/60 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:bg-zinc-700/80"
+          className="w-12 h-12 bg-zinc-800/60 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:bg-zinc-700/80 mx-auto md:mx-0"
           whileHover={{ 
             rotate: [0, -5, 5, -5, 0],
             transition: { duration: 0.4 }
@@ -88,7 +88,7 @@ const TechItem = ({ tech, index }) => {
         >
           {getIconComponent(tech.name)}
         </motion.div>
-        <h3 className="text-sm font-medium text-white group-hover:text-zinc-100 transition-colors duration-300">
+        <h3 className="hidden md:block text-sm font-medium text-white group-hover:text-zinc-100 transition-colors duration-300">
           {tech.name}
         </h3>
       </div>

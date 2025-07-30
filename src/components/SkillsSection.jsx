@@ -84,7 +84,7 @@ const SkillsSection = () => {
         </motion.p>
 
         <motion.div 
-          className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4"
+          className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-4 gap-4"
           variants={containerVariants}
         >
           {portfolioData.skills.technologies.map((tech, index) => (

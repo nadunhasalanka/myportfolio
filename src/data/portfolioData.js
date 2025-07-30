@@ -20,12 +20,13 @@ export const portfolioData = {
   ],
   
   infoItems: [
-    { icon: "🌍", text: "Sri Lanka" },
+    { icon: "🌍", text: "Sri Lanka 🇱🇰" },
+    // { icon: "🌍", text: "Sri Lanka" },
     { icon: "💬", text: "English & Sinhala" },
-    { icon: "💻", text: "Software Engineer" },
-    { icon: "🚀", text: "Intern" },
-    { icon: "🎓", text: "UCSC" },
-    { icon: "✨", text: "Good Boy" }
+    { icon: "💻", text: "Developer" },
+    // { icon: "🚀", text: "Intern" },
+    { icon: "🎓", text: "UNIVERSITY OF COLOMBO" },
+    // { icon: "✨", text: "Good Boy" }
   ],
   
   about: {
@@ -136,7 +137,7 @@ export const portfolioData = {
   },
   
   skills: {
-    title: "SKILLS & EXPERTISE",
+    title: "SKILLS & TOOLS",
     toolsTitle: "Tools & Technologies",
     toolsDescription: "My comprehensive skill set spans across modern web development, cloud technologies, and programming languages. These tools enable me to build scalable and efficient solutions.",
     technologies: [
@@ -235,19 +236,19 @@ export const portfolioData = {
   socialLinks: [
     {
       platform: "Twitter",
-      handle: "@NadunHasalanka",
-      url: "https://twitter.com/NadunHasalanka",
+      handle: "@HasalankaNadun",
+      url: "https://x.com/HasalankaNadun",
       icon: "𝕏"
     },
     {
       platform: "LinkedIn",
-      handle: "@nadunhasalanka",
-      url: "https://linkedin.com/in/nadunhasalanka",
+      handle: "Nadun Hasalanka",
+      url: "https://www.linkedin.com/in/nadun-hasalanka/",
       icon: "in"
     },
     {
       platform: "Github",
-      handle: "@nadunhasalanka",
+      handle: "nadunhasalanka",
       url: "https://github.com/nadunhasalanka",
       icon: "⚡"
     }
