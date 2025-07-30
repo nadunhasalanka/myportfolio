@@ -92,8 +92,8 @@ const ProjectsSection = () => {
           variants={titleVariants}
         >
           {/* <span className="hidden lg:block absolute left-4 top-1/2 transform -translate-y-1/2 w-3 h-1 bg-white"></span> */}
-          <span className="block sm:inline">{"</ Featured"}</span>
-          <span className="block sm:inline"><span className="ml-40 sm:ml-1">{" Projects >"}</span></span>
+          <span className="block sm:inline">{"</ FEATURED"}</span>
+          <span className="block sm:inline"><span className="ml-40 sm:ml-1">{" PROJECTS >"}</span></span>
         </motion.h2>
 
         {/* Filter Buttons Row */}
