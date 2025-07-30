@@ -227,44 +227,50 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
               initial="hidden"
               animate={isHovered || window.innerWidth < 768 ? "visible" : "hidden"}
             >
-              <motion.a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                variants={buttonVariants}
-                whileHover="hover"
-                whileTap="tap"
-                className="flex items-center gap-2 bg-white text-black px-3 lg:px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 cursor-pointer shadow-xl"
-              >
-                <FaExternalLinkAlt size={14} />
-                <span className="hidden lg:inline">Live Demo</span>
-              </motion.a>
+              {project.liveUrl && (
+                <motion.a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variants={buttonVariants}
+                  whileHover="hover"
+                  whileTap="tap"
+                  className="flex items-center gap-2 bg-white text-black px-3 lg:px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 cursor-pointer shadow-xl"
+                >
+                  <FaExternalLinkAlt size={14} />
+                  <span className="hidden lg:inline">Live Demo</span>
+                </motion.a>
+              )}
               
-              <motion.a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                variants={buttonVariants}
-                whileHover="hover"
-                whileTap="tap"
-                className="flex items-center gap-2 bg-zinc-800/90 text-white px-3 lg:px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 cursor-pointer shadow-xl hover:bg-zinc-700/90"
-              >
-                <FaGithub size={16} />
-                <span className="hidden lg:inline">GitHub</span>
-              </motion.a>
+              {project.githubUrl && (
+                <motion.a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variants={buttonVariants}
+                  whileHover="hover"
+                  whileTap="tap"
+                  className="flex items-center gap-2 bg-zinc-800/90 text-white px-3 lg:px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 cursor-pointer shadow-xl hover:bg-zinc-700/90"
+                >
+                  <FaGithub size={16} />
+                  <span className="hidden lg:inline">GitHub</span>
+                </motion.a>
+              )}
 
-              <motion.a
-                href={project.linkedinUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                variants={buttonVariants}
-                whileHover="hover"
-                whileTap="tap"
-                className="flex items-center gap-2 bg-blue-600/90 text-white px-3 lg:px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 cursor-pointer shadow-xl hover:bg-blue-500/90"
-              >
-                <FaLinkedin size={16} />
-                <span className="hidden lg:inline">LinkedIn</span>
-              </motion.a>
+              {project.linkedinUrl && (
+                <motion.a
+                  href={project.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variants={buttonVariants}
+                  whileHover="hover"
+                  whileTap="tap"
+                  className="flex items-center gap-2 bg-blue-600/90 text-white px-3 lg:px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 cursor-pointer shadow-xl hover:bg-blue-500/90"
+                >
+                  <FaLinkedin size={16} />
+                  <span className="hidden lg:inline">LinkedIn</span>
+                </motion.a>
+              )}
             </motion.div>
           </div>
           

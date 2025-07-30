@@ -57,8 +57,8 @@ export const portfolioData = {
         hasVideo: true,
         videoUrl: "/demo-video.mp4", // You can replace this with actual video URL
         liveUrl: "https://shiksha-soladu.vercel.app",
-        githubUrl: "https://github.com/nadunhasalanka/ShikshaSoladu",
-        linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
+        githubUrl: "https://github.com/nadunhasalanka/ShikshaSoladu"
+        // linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
       },
       {
         id: 2,
