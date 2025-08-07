@@ -200,10 +200,37 @@ const ProjectCard = ({ project, index, onHoverChange }) => {
                   playsInline
                 >
                   <source src={project.videoUrl} type="video/mp4" />
-                  <ProjectMockup type={project.mockupType} />
+                  {/* Fallback to image or mockup if video fails */}
+                  {project.image ? (
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <ProjectMockup type={project.mockupType} />
+                  )}
                 </video>
+              ) : project.image ? (
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    // Fallback to mockup if image fails to load
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'block';
+                  }}
+                />
               ) : (
                 <ProjectMockup type={project.mockupType} />
+              )}
+              
+              {/* Hidden mockup fallback */}
+              {project.image && !project.hasVideo && (
+                <div style={{ display: 'none' }}>
+                  <ProjectMockup type={project.mockupType} />
+                </div>
               )}
             </motion.div>
             

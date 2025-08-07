@@ -32,8 +32,8 @@ export const portfolioData = {
   about: {
     title: "ABOUT ME",
     paragraphs: [
-      "I'm a passionate designer and developer with 6+ years of experience creating beautiful, functional interfaces. I specialize in React.js, Tailwind CSS, and responsive design principles that deliver exceptional user experiences.",
-      "When I'm not coding, I enjoy exploring new technologies, watching anime, and experimenting with creative side projects. I believe in continuous learning and staying ahead of design trends to deliver innovative solutions to my clients."
+      "I'm a Computer Science student at the University of Colombo School of Computing with a passion for building solutions that automate manual processes and solve real-world problems. I specialize in full-stack development, backend systems, and DevOps, working with Java Spring Boot, React, Docker, and the MERN stack.",
+      "When I'm not coding, I enjoy content creation, writing, drawing, and exploring the crypto airdrop world. Currently seeking internship opportunities where I can contribute meaningfully while continuing to grow as a developer."
     ]
   },
   
@@ -41,77 +41,71 @@ export const portfolioData = {
     title: "FEATURED PROJECTS",
     filters: ["All", "Web", "DevOps"],
     items: [
-      {
-        id: 1,
-        title: "ShikshaSoladu.AI",
+      // {
+      //   id: 1,
+      //   title: "ShikshaSoladu.AI",
+      //   category: "Web",
+      //   description: "A personalized education technology designed for Deaf and Blind learners, making education available to all.",
+      //   techStack: ["ReactJs", "TI.js", "Mediapipe", "PeerJs"],
+      //   features: [
+      //     "Inclusive Learning for Disabled Students – Tailored education tools for blind, deaf, and physically challenged students.",
+      //     "Multi-Mode Interaction – Features like text-to-speech, sign language videos, and voice recognition for accessibility.",
+      //     "Color & UI Adaptability – Dyslexia-friendly fonts, color blindness modes, and simple UI design."
+      //   ],
+      //   status: "Completed",
+      //   mockupType: "shiksha",
+      //   image: "/images/shiksha-project.jpg", // Add your project image here
+      //   hasVideo: true,
+      //   videoUrl: "/demo-video.mp4", // You can replace this with actual video URL
+      //   liveUrl: "https://shiksha-soladu.vercel.app",
+      //   githubUrl: "https://github.com/nadunhasalanka/ShikshaSoladu"
+      //   // linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
+      // },
+            {
+        id: 3,
+        title: "Attorney - Legal Case Handeling System",
         category: "Web",
-        description: "A personalized education technology designed for Deaf and Blind learners, making education available to all.",
-        techStack: ["ReactJs", "TI.js", "Mediapipe", "PeerJs"],
+        description: "A comprehensive legal practice management platform designed for law firms and solo practitioners, featuring case management, client communication, court scheduling, and financial tracking with Sri Lankan legal system integration.",
+        techStack: ["React", "Node.js", "Firebase", "Tailwind CSS", "Express.js"],
         features: [
-          "Inclusive Learning for Disabled Students – Tailored education tools for blind, deaf, and physically challenged students.",
-          "Multi-Mode Interaction – Features like text-to-speech, sign language videos, and voice recognition for accessibility.",
-          "Color & UI Adaptability – Dyslexia-friendly fonts, color blindness modes, and simple UI design."
+          "Complete Case Management – Comprehensive case profiles with client details, court information, hearing schedules, and document management for efficient legal practice.",
+          "Smart Court System Integration – Dynamic court selection based on Sri Lankan judicial hierarchy with automated location mapping and case type categorization.",
+          "Advanced Calendar & Scheduling – Intelligent hearing management, task scheduling, and deadline tracking with automated notifications and conflict detection.",
+          "Client Communication Hub – Integrated chat system, client portal access, and real-time case updates for enhanced attorney-client relationships.",
+          "Financial Management – Fee tracking, payment status monitoring, billing management, and financial reporting for practice profitability.",
         ],
-        status: "Completed",
-        mockupType: "shiksha",
+        status: "In Progress",
+        image: "/images/attorneyflow-project.jpg", // Add your project image here
         hasVideo: true,
-        videoUrl: "/demo-video.mp4", // You can replace this with actual video URL
-        liveUrl: "https://shiksha-soladu.vercel.app",
-        githubUrl: "https://github.com/nadunhasalanka/ShikshaSoladu"
-        // linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
+        videoUrl: "/projects/videos/attorney.mp4", // You can replace this with actual video URL
+        // liveDemo: "https://attorneyflow-demo.netlify.app", // Optional: if you have a live demo
+        // github: "https://github.com/yourusername/attorney-frontend", // Optional: if you want to include GitHub link
+        highlights: [
+          "Sri Lankan Legal System Compliant",
+          "Real-time Case Collaboration",
+          "Automated Court Scheduling",
+          "Secure Document Management"
+        ]
       },
       {
         id: 2,
-        title: "Enigma",
+        title: "AI-Generated Pinterest Pin Creator",
         category: "Web",
-        description: "A real-time collaborative design platform built for modern teams, with powerful tools and open-source flexibility.",
-        techStack: ["Next.js", "TI.js", "TypeScript", "CodeBlocks"],
+        description: "An automated Pinterest content creation tool that combines AI and design automation to generate SEO-optimized pins with dynamic visual elements and bulk processing capabilities.",
+        techStack: ["Python", "ChatGPT API", "Google Sheets API", "PIL", "Automation"],
         features: [
-          "Real-Time Collaborative Design – Enables seamless teamwork on UI/UX designs with live multi-user editing and instant updates.",
-          "Advanced Design Tools – Professional-grade vector editing, prototyping, and design system management capabilities."
+          "AI Content Generation – Integrated ChatGPT for smart, SEO-optimized titles and descriptions with built-in keyword optimization for better Pinterest visibility.",
+          "Design Automation – Random gradient backgrounds, smart overlay systems, dynamic font combinations, custom shape generation, and automated element positioning with perfect spacing.",
+          "Bulk Processing – Google Sheets integration for scalable pin generation, template-based design system, and multi-layer design with background blending effects.",
+          "Multiple template designs, automated footer creation, and customizable visual elements for diverse content creation needs."
         ],
         status: "Completed",
         mockupType: "enigma",
+        image: "/projects/images/pinterest_pins_generator.jpeg", // Add your project image here
         hasVideo: false,
-        liveUrl: "https://enigma-design.vercel.app",
-        githubUrl: "https://github.com/nadunhasalanka/Enigma",
-        linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
-      },
-      {
-        id: 3,
-        title: "TaskFlow Pro",
-        category: "Web",
-        description: "A comprehensive project management platform with real-time collaboration, task tracking, and team productivity analytics.",
-        techStack: ["React", "Node.js", "MongoDB", "Socket.io"],
-        features: [
-          "Real-Time Task Management – Live updates, drag-and-drop interface, and instant collaboration across team members.",
-          "Advanced Analytics Dashboard – Detailed productivity metrics, time tracking, and project progress visualization.",
-          "Team Collaboration Tools – Chat integration, file sharing, and notification system for seamless teamwork."
-        ],
-        status: "In Progress",
-        mockupType: "shiksha",
-        hasVideo: false,
-        liveUrl: "https://taskflow-pro.vercel.app",
-        githubUrl: "https://github.com/nadunhasalanka/TaskFlow-Pro",
-        linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
-      },
-      {
-        id: 4,
-        title: "AirDrop Journal",
-        category: "DevOps",
-        description: "An intelligent content creation platform powered by AI for generating blog posts, social media content, and marketing materials.",
-        techStack: ["React", "Node", "Docker", "MongoDB"],
-        features: [
-          "AI-Powered Content Generation – Create high-quality blog posts, social media content, and marketing copy using advanced AI models.",
-          "Multi-Platform Publishing – Direct integration with social media platforms and content management systems.",
-          "Content Optimization – SEO suggestions, readability analysis, and performance tracking for better engagement."
-        ],
-        status: "Completed",
-        mockupType: "enigma",
-        hasVideo: false,
-        liveUrl: "https://ai-content-studio.vercel.app",
-        githubUrl: "https://github.com/nadunhasalanka/AI-Content-Studio",
-        linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
+        liveUrl: "", // No live demo for this project
+        githubUrl: "https://github.com/nadunhasalanka/Pinterest_Pin_Generator",
+        linkedinUrl: "https://www.linkedin.com/posts/nadun-hasalanka_aiproject-contentautomation-python-activity-7275445324943384576-x7c1"
       },
       {
         id: 5,
@@ -127,12 +121,58 @@ export const portfolioData = {
         ],
         status: "Completed",
         mockupType: "shiksha",
+        image: "/projects/images/we4u.jpeg", // Add your project image here
         hasVideo: false,
         videoUrl: "/demo-video.mp4", // You can replace this with actual video URL
-        liveUrl: "https://shiksha-soladu.vercel.app",
-        githubUrl: "https://github.com/nadunhasalanka/ShikshaSoladu",
-        linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
-      }
+        githubUrl: "https://github.com/AkithJayalath/we4u_web",
+        linkedinUrl: "https://www.linkedin.com/posts/nadun-hasalanka_proud-to-share-our-2nd-year-group-project-activity-7332948678732644352-9iL4"
+      },
+      {
+        id: 4,
+        category: "WEB",
+        title: "Airdrop Journal - Crypto Airdrop Tracking Platform",
+        description: "A Web application for cryptocurrency enthusiasts to track, manage, and optimize their airdrop participation.",
+        techStack: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Docker"],
+        features: [
+          "",
+          "Comprehensive analytics for airdrop performance.",
+          "Intelligent task system with automatic daily task generation for recurring airdrop activities.",
+          "Real-time dashboard with statistics showing airdrop counts, daily task completions, and progress tracking.",
+          "Responsive design with dark theme.",
+        ],
+        status: "Completed",
+        mockupType: "enigma",
+        image: "/projects/images/Airdrop_Journal.png", // Add your project image here
+        hasVideo: false,
+        // liveUrl: "https://ai-content-studio.vercel.app",
+        // githubUrl: "https://github.com/nadunhasalanka/AI-Content-Studio",
+        // linkedinUrl: "https://linkedin.com/in/nadunhasalanka"
+      },
+      {
+        id: 4,
+        title: "Healthcare Microservices Backend",
+        category: "Web",
+        description: "A scalable healthcare management system backend built with a microservices architecture, enabling seamless patient, authentication, and API gateway services.",
+        techStack: ["Java", "Spring Boot", "Kafka", "Maven", "POSTGRES", "Docker"],
+        features: [
+          "Microservices Architecture – Decoupled patient and authentication services for improved scalability and maintainability.",
+          "API Gateway – Centralized routing, JWT-based authentication, and request filtering using Spring Cloud Gateway.",
+          "Secure Authentication – Robust JWT validation and role-based access control for patient and staff data.",
+          "Event-Driven Communication – Real-time data synchronization and notifications powered by Apache Kafka.",
+          "RESTful APIs – Standardized endpoints for patient management and authentication.",
+          "Containerization – Dockerized services for easy deployment and scalability."
+        ],
+        status: "Completed",
+        image: "/projects/images/patient-management-mocroservice.png", // Add your project image here
+        hasVideo: false,
+        // videoUrl: "/projects/videos/medixflow.mp4", // Optional: add if available
+        // liveDemo: "https://medixflow-demo.netlify.app", // Optional: add if available
+        // github: "https://github.com/nadunhasalanka/medixflow", // Optional: add if available
+        githubUrl: "https://github.com/nadunhasalanka/patient-management-backend"
+      },
+
+
+
     ]
   },
   
