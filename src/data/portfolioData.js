@@ -134,7 +134,7 @@ export const portfolioData = {
         description: "A Web application for cryptocurrency enthusiasts to track, manage, and optimize their airdrop participation.",
         techStack: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Docker"],
         features: [
-          "",
+          "", 
           "Comprehensive analytics for airdrop performance.",
           "Intelligent task system with automatic daily task generation for recurring airdrop activities.",
           "Real-time dashboard with statistics showing airdrop counts, daily task completions, and progress tracking.",
