@@ -40,6 +40,11 @@ const ProfileHeader = () => {
             pauseTime={3000}
           />
         </h1>
+        
+        {/* Email */}
+        <p className="text-zinc-400 text-sm md:text-base font-medium mb-2">
+          {portfolioData.contact.contactInfo.email}
+        </p>
       </div>
     </div>
   );

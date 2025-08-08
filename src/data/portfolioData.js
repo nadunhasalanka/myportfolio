@@ -65,14 +65,13 @@ export const portfolioData = {
         id: 3,
         title: "Attorney - Legal Case Handeling System",
         category: "Web",
-        description: "A comprehensive legal practice management platform designed for law firms and solo practitioners, featuring case management, client communication, court scheduling, and financial tracking with Sri Lankan legal system integration.",
+        description: "A comprehensive legal case handling platform designed for law firms, featuring case management, client communication, court scheduling, and financial tracking with Sri Lankan legal system integration.",
         techStack: ["React", "Node.js", "Firebase", "Tailwind CSS", "Express.js"],
         features: [
-          "Complete Case Management – Comprehensive case profiles with client details, court information, hearing schedules, and document management for efficient legal practice.",
+          "Complete Case Management – Case profiles with client details, court information, hearing schedules, for efficient legal practice.",
           "Smart Court System Integration – Dynamic court selection based on Sri Lankan judicial hierarchy with automated location mapping and case type categorization.",
           "Advanced Calendar & Scheduling – Intelligent hearing management, task scheduling, and deadline tracking with automated notifications and conflict detection.",
-          "Client Communication Hub – Integrated chat system, client portal access, and real-time case updates for enhanced attorney-client relationships.",
-          "Financial Management – Fee tracking, payment status monitoring, billing management, and financial reporting for practice profitability.",
+          "AI-Powered Legal Research Chatbot – Integrated chatbot that allows legal researchers to query and retrieve all cases with results, streamlining case discovery and analysis."
         ],
         status: "In Progress",
         image: "/images/attorneyflow-project.jpg", // Add your project image here
@@ -86,8 +85,8 @@ export const portfolioData = {
           "Automated Court Scheduling",
           "Secure Document Management"
         ]
-      },
-      {
+            },
+            {
         id: 2,
         title: "AI-Generated Pinterest Pin Creator",
         category: "Web",
@@ -106,18 +105,20 @@ export const portfolioData = {
         liveUrl: "", // No live demo for this project
         githubUrl: "https://github.com/nadunhasalanka/Pinterest_Pin_Generator",
         linkedinUrl: "https://www.linkedin.com/posts/nadun-hasalanka_aiproject-contentautomation-python-activity-7275445324943384576-x7c1"
-      },
-      {
+            },
+            {
         id: 5,
         title: "WE4U",
         category: "Web",
-        description: "This Platform connects Caregivers, Careseekers & Consultants into a one single place. Where they can commuicate and engage.",
+        description: "This Platform connects Caregivers, Careseekers & Consultants into a one single place. Where they can communicate and engage.",
         techStack: ["PHP", "HTML", "MYSQL"],
         features: [
-          "Careseekers can Search for Caregivers && Consultants throught this platform.",
-          "Two types of sheduling logic for Caregivers and Consultants that handled differently.",
-          "Multiple roles that routes differently, and makes different functionalities.",
-          "All these without engaging with a single framework or a libry."
+          "Caregiver & Consultant Discovery – Careseekers can search for Caregivers and Consultants through this platform.",
+          "Distinct Scheduling Logic – Separate scheduling systems for Caregivers and Consultants, each handled differently.",
+          "Role-Based Functionality – Multiple user roles with separate routing and tailored functionalities.",
+          "Framework-Free Implementation – Built entirely without using any frameworks or libraries.",
+          "Secure Access – Secure user authentication and role-based access.",
+          "Responsive Design – Accessible across devices for a seamless user experience."
         ],
         status: "Completed",
         mockupType: "shiksha",
@@ -126,19 +127,18 @@ export const portfolioData = {
         videoUrl: "/demo-video.mp4", // You can replace this with actual video URL
         githubUrl: "https://github.com/AkithJayalath/we4u_web",
         linkedinUrl: "https://www.linkedin.com/posts/nadun-hasalanka_proud-to-share-our-2nd-year-group-project-activity-7332948678732644352-9iL4"
-      },
-      {
+        },
+        {
         id: 4,
         category: "WEB",
         title: "Airdrop Journal - Crypto Airdrop Tracking Platform",
         description: "A Web application for cryptocurrency enthusiasts to track, manage, and optimize their airdrop participation.",
         techStack: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Docker"],
         features: [
-          "", 
-          "Comprehensive analytics for airdrop performance.",
-          "Intelligent task system with automatic daily task generation for recurring airdrop activities.",
-          "Real-time dashboard with statistics showing airdrop counts, daily task completions, and progress tracking.",
-          "Responsive design with dark theme.",
+          "Airdrop Portfolio Management – Track multiple cryptocurrency airdrops with status monitoring and participation history.",
+          "Daily Task Automation – Automated task generation for recurring airdrop activities with completion tracking.",
+          "Analytics Dashboard – Real-time statistics showing progress, rewards, and performance metrics.",
+          "Smart Filtering System – Filter airdrops by status, blockchain, and reward type for easy management."
         ],
         status: "Completed",
         mockupType: "enigma",
@@ -247,7 +247,7 @@ export const portfolioData = {
   contact: {
     title: "GET IN TOUCH",
     contactInfo: {
-      email: "nadunhasalanka@gmail.com",
+      email: "nadun.has02@gmail.com",
       phone: "+94 7070000629",
       location: "UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING"
     },
