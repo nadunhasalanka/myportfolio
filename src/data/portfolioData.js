@@ -268,7 +268,7 @@ export const portfolioData = {
   },
   
   footer: {
-    brand: "NCODE",
+    brand: "N.DEV",
     copyright: "© 2025 Nadun Hasalanka. All rights reserved.",
     // tagline: "Crafted with passion and precision"
   },

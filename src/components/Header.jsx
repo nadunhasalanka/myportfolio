@@ -16,7 +16,7 @@ const Header = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-2xl font-bold text-white"
         >
-          NCODE<span className="animate-blink text-white">|</span>
+          N.DEV<span className="animate-blink text-white">|</span>
         </motion.div>
         
         <motion.ul 

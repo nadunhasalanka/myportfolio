@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolioData';
 import emailjs from '@emailjs/browser';
+import emailjsConfig from '../config/emailjs';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -26,10 +27,8 @@ const ContactSection = () => {
     setSubmitStatus('');
 
     try {
-      // EmailJS configuration
-      const serviceId = 'YOUR_SERVICE_ID'; // Replace with your EmailJS service ID
-      const templateId = 'YOUR_TEMPLATE_ID'; // Replace with your EmailJS template ID  
-      const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
+      // EmailJS configuration from config file
+      const { serviceId, templateId, publicKey } = emailjsConfig;
 
       const templateParams = {
         from_name: formData.name,
