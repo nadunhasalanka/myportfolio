@@ -1,10 +1,10 @@
 // EmailJS Configuration
-// Using environment variables for secure deployment
+// Using Vite environment variables with fallbacks
 
 const emailjsConfig = {
-  serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID,
-  templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-  publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_5anu4so',
+  templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_c75t2lf',
+  publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'gDS-k3GfkFDRxBXgF'
 };
 
 export default emailjsConfig;
